@@ -7,10 +7,14 @@ COPY --chown=$USER:$USER package*.json .
 COPY --chown=$USER:$USER index.js .
 COPY --chown=$USER:$USER my-app my-app
 
-RUN npm install --production && \
-    npm install -g @angular/cli && \
-    cd my-app && \
-    ng build
+# RUN npm install --production && \
+#     npm install -g @angular/cli && \
+#     cd my-app && \
+#     ng build
+RUN npm install --production
+RUN npm install -g @angular/cli 
+RUN cd my-app
+RUN ng build
 
 FROM node:14-alpine
 
