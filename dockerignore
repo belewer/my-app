@@ -2,6 +2,7 @@
 node_modules
 .git
 .vscode
+Dockerfile
 my-app/.angular
 my-app/node_modules
 my-app/.vscode
