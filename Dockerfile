@@ -14,7 +14,8 @@ COPY --chown=$USER:$USER my-app my-app
 RUN npm install --production
 RUN npm install -g @angular/cli 
 RUN cd my-app
-RUN npm run build-watch
+WORKDIR /app/my-app
+RUN npm run build
 
 FROM node:14-alpine
 

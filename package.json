@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd my-app && ng build",
+    "build": "ng build",
     "build-watch": "my-app/@angular/cli/bin/ng build --deploy-url=dist/ --output-hashing all --watch",
     "start": "node index.js"
   },
